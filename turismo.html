@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O que fazer - Praia da Pinheira</title>
+    <style>
+        :root {
+            --azul-mar: #0077b6;
+            --azul-claro: #90e0ef;
+            --areia: #fdf0d5;
+            --verde-trilha: #2d6a4f;
+            --texto: #333;
+            --branco: #ffffff;
+        }
+
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            color: var(--texto);
+            background-color: #f9f9f9;
+        }
+
+        header {
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+                        url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&q=80&w=1000') center/cover;
+            color: var(--branco);
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        nav {
+            background: var(--branco);
+            padding: 15px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: var(--azul-mar);
+            font-weight: bold;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        .intro {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .grid-lugares {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+        }
+
+        .card {
+            background: var(--branco);
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5s);
+        }
+
+        .card-img {
+            height: 200px;
+            background-color: var(--azul-claro);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--azul-mar);
+            font-weight: bold;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .card-content {
+            padding: 20px;
+        }
+
+        .card-content h3 {
+            margin-top: 0;
+            color: var(--verde-trilha);
+        }
+
+        .tag {
+            display: inline-block;
+            background: var(--azul-claro);
+            color: var(--azul-mar);
+            padding: 2px 10px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            margin-bottom: 10px;
+        }
+
+        .dica-local {
+            background: #e9f5ff;
+            border-left: 5px solid var(--azul-mar);
+            padding: 15px;
+            margin-top: 40px;
+            border-radius: 0 8px 8px 0;
+        }
+
+        footer {
+            background: var(--azul-mar);
+            color: var(--branco);
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 60px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Roteiro de Aventuras</h1>
+        <p>Descubra os melhores lugares públicos e gratuitos na Pinheira</p>
+    </header>
+
+    <nav>
+        <a href="cidade.html">Início/História</a>
+        <a href="#praias">Praias</a>
+        <a href="#trilhas">Trilhas</a>
+        <a href="#vilarejo">O Vilarejo</a>
+        <a href="index.html">Voltar</a>
+    </nav>
+
+    <div class="container">
+        
+        <section class="intro">
+            <h2>O que fazer na Pinheira?</h2>
+            <p>A Pinheira é o destino ideal para quem busca desconectar da tecnologia e reconectar com a natureza. Aqui, o luxo é o pé na areia e o pôr do sol.</p>
+        </section>
+
+        <div class="grid-lugares">
+            <div class="card">
+                <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1519046904884-53103b34b206?auto=format&fit=crop&q=80&w=500')"></div>
+                <div class="card-content">
+                    <span class="tag">Público</span>
+                    <h3>Praia de Baixo</h3>
+                    <p>Com mar calmo e águas rasas, é perfeita para famílias com crianças e para a prática de Stand Up Paddle. É onde a vida da vila acontece.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&q=80&w=500')"></div>
+                <div class="card-content">
+                    <span class="tag">Trilha</span>
+                    <h3>Vale da Utopia</h3>
+                    <p>Acessível por trilha a partir da Praia de Cima. Um campo verde à beira-mar onde o visual é místico e inesquecível. Área de preservação natural.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1506477331477-33d5d8b3dc85?auto=format&fit=crop&q=80&w=500')"></div>
+                <div class="card-content">
+                    <span class="tag">Público</span>
+                    <h3>Praia de Cima</h3>
+                    <p>Uma das praias mais bonitas da região. Enclausurada entre dois morros, oferece águas cristalinas e é o ponto de partida para as melhores trilhas.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1544551763-47a0159f963f?auto=format&fit=crop&q=80&w=500')"></div>
+                <div class="card-content">
+                    <span class="tag">Cultura</span>
+                    <h3>Centrinho da Pinheira</h3>
+                    <p>Caminhe pelas ruas sem pressa. Visite as lojas de artesanato local, as peixarias e sinta a hospitalidade dos moradores locais.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&q=80&w=500')"></div>
+                <div class="card-content">
+                    <span class="tag">Grátis</span>
+                    <h3>Ponta do Papagaio</h3>
+                    <p>Uma península próxima que, dependendo da maré, forma um caminho de areia ligando à ilha. Um espetáculo da natureza a poucos minutos da Pinheira.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1551024601-bec78aea704b?auto=format&fit=crop&q=80&w=500')"></div>
+                <div class="card-content">
+                    <span class="tag">Trilha</span>
+                    <h3>Prainha do Joaquim Martins</h3>
+                    <p>Uma pequena enseada escondida acessada por trilha leve. Ideal para quem busca isolamento total e um banho de mar sossegado.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="dica-local">
+            <h3>💡 Dica de Ouro:</h3>
+            <p>Acorde cedo para ver o nascer do sol na Praia de Cima. Se tiver sorte, poderá avistar grupos de golfinhos que costumam visitar a baía logo pela manhã!</p>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>Planeje sua visita | Palhoça, Santa Catarina</p>
+    </footer>
+
+</body>
+</html>

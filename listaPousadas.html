@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Onde se Hospedar - Praia da Pinheira</title>
+    <style>
+        :root {
+            --azul-mar: #0077b6;
+            --azul-claro: #90e0ef;
+            --areia: #fdf0d5;
+            --coral: #ffb4a2;
+            --texto: #333;
+            --branco: #ffffff;
+        }
+
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f4f8;
+            color: var(--texto);
+        }
+
+        header {
+            background: linear-gradient(rgba(0, 119, 182, 0.7), rgba(0, 119, 182, 0.7)), 
+                        url('https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&q=80&w=1000') center/cover;
+            color: var(--branco);
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        nav {
+            background: var(--branco);
+            padding: 15px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: var(--azul-mar);
+            font-weight: bold;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .pousada-item {
+            display: flex;
+            background: var(--branco);
+            margin-bottom: 30px;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+            transition: transform 0.3s ease;
+        }
+
+        .pousada-item:hover {
+            transform: scale(1.01);
+        }
+
+        .pousada-img {
+            flex: 1;
+            min-width: 300px;
+            background-size: cover;
+            background-position: center;
+            min-height: 250px;
+        }
+
+        .pousada-info {
+            flex: 2;
+            padding: 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .pousada-info h3 {
+            margin: 0 0 10px 0;
+            color: var(--azul-mar);
+            font-size: 1.5rem;
+        }
+
+        .estrelas {
+            color: #ffb703;
+            margin-bottom: 10px;
+        }
+
+        .comodidades {
+            display: flex;
+            gap: 10px;
+            margin: 15px 0;
+            flex-wrap: wrap;
+        }
+
+        .comodidade-tag {
+            background: #e1f5fe;
+            color: #0277bd;
+            padding: 5px 12px;
+            border-radius: 5px;
+            font-size: 0.85rem;
+            font-weight: 500;
+        }
+
+        .btn-contato {
+            align-self: flex-start;
+            background-color: var(--azul-mar);
+            color: white;
+            padding: 10px 25px;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: bold;
+            margin-top: 10px;
+            transition: background 0.3s;
+        }
+
+        .btn-contato:hover {
+            background-color: #023e8a;
+        }
+
+        footer {
+            background: var(--azul-mar);
+            color: var(--branco);
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        @media (max-width: 768px) {
+            .pousada-item { flex-direction: column; }
+            .pousada-img { min-width: 100%; height: 200px; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Onde se Hospedar</h1>
+        <p>Encontre o descanso perfeito entre o mar e a montanha</p>
+    </header>
+
+    <nav>
+        <a href="cidade.html">História</a>
+        <a href="turismo.html">O que fazer</a>
+        <a href="listaPousadas.html">Pousadas</a>
+        <a href="index.html">Voltar</a>
+
+    </nav>
+
+ <div class="container" id="lista">
+        
+    <div class="pousada-item">
+        <div class="pousada-img" style="background-image: url('https://lh3.googleusercontent.com/p/AF1QipN3-Zz0m6_Yf_79p_V-0x_R6F7X5x0X0x0x0x0=s1600-w1000')"></div>
+        <div class="pousada-info">
+            <div class="estrelas">★★★★★</div>
+            <h3>Solar da Pinheira</h3>
+            <p>Uma das mais tradicionais da região, localizada na Praia de Baixo. Oferece uma estrutura completa com piscina, jardins amplos e um café da manhã muito elogiado.</p>
+            <div class="comodidades">
+                <span class="comodidade-tag">Piscina</span>
+                <span class="comodidade-tag">Frente Mar</span>
+                <span class="comodidade-tag">Café Colonial</span>
+            </div>
+            <a href="https://www.solardapinheira.com.br" target="_blank" class="btn-contato">Ver Site Oficial</a>
+        </div>
+    </div>
+
+    <div class="pousada-item">
+        <div class="pousada-img" style="background-image: url('https://lh3.googleusercontent.com/p/AF1QipM6p_KxW_r3vV_rO6v_R6v_R6v_R6v_R6v=s1600-w1000')"></div>
+        <div class="pousada-info">
+            <div class="estrelas">★★★★</div>
+            <h3>Villa de Pinheiral</h3>
+            <p>Localizada na charmosa Praia de Cima, esta pousada oferece um ambiente rústico e sofisticado, muito próxima às trilhas que levam ao Vale da Utopia.</p>
+            <div class="comodidades">
+                <span class="comodidade-tag">Próximo às Trilhas</span>
+                <span class="comodidade-tag">Ar Condicionado</span>
+                <span class="comodidade-tag">Estacionamento</span>
+            </div>
+            <a href="#" class="btn-contato">Consultar Preços</a>
+        </div>
+    </div>
+
+    <div class="pousada-item">
+        <div class="pousada-img" style="background-image: url('https://lh3.googleusercontent.com/p/AF1QipP_L1vX_r3vV_rO6v_R6v_R6v_R6v_R6v=s1600-w1000')"></div>
+        <div class="pousada-info">
+            <div class="estrelas">★★★★</div>
+            <h3>Morada da Pinheira</h3>
+            <p>Apartamentos mobiliados ideais para famílias que querem se sentir em casa. Localização privilegiada entre a Praia de Baixo e a Praia de Cima.</p>
+            <div class="comodidades">
+                <span class="comodidade-tag">Cozinha Completa</span>
+                <span class="comodidade-tag">Churrasqueira</span>
+                <span class="comodidade-tag">Wi-Fi 5G</span>
+            </div>
+            <a href="#" class="btn-contato">Falar no WhatsApp</a>
+        </div>
+    </div>
+
+</div>
+
+    <footer>
+        <section class="tripadvisor-section" style="background: white; padding: 40px 20px; border-radius: 15px; margin-top: 40px; text-align: center;">
+    <img src="https://static.tacdn.com/img2/brand_refresh/Tripadvisor_lockup_horizontal_secondary_registered.svg" alt="TripAdvisor" style="width: 200px; margin-bottom: 20px;">
+    <h3>O que dizem os viajantes na rede</h3>
+    
+    <div class="trip-cards-container" style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
+        
+        <div class="trip-widget" style="border: 1px solid #e0e0e0; padding: 15px; border-radius: 8px; width: 250px;">
+            <div style="color: #00af87; font-size: 1.2rem; font-weight: bold;">Solar da Pinheira</div>
+            <div style="margin: 10px 0;">
+                <span style="color: #00af87;">●●●●●</span> 4.5 de 5
+            </div>
+            <p style="font-size: 0.9rem; font-style: italic;">"Lugar maravilhoso, pé na areia e atendimento impecável!"</p>
+            <small>— Avaliado no TripAdvisor</small>
+        </div>
+
+        <div class="trip-widget" style="border: 1px solid #e0e0e0; padding: 15px; border-radius: 8px; width: 250px;">
+            <div style="color: #00af87; font-size: 1.2rem; font-weight: bold;">Praia da Pinheira</div>
+            <div style="margin: 10px 0;">
+                <span style="color: #00af87;">●●●●●</span> 5.0 de 5
+            </div>
+            <p style="font-size: 0.9rem; font-style: italic;">"A melhor praia de Palhoça para quem tem crianças."</p>
+            <small>— Avaliado no TripAdvisor</small>
+        </div>
+
+    </div>
+    
+    <div style="margin-top: 30px;">
+        <a href="https://www.tripadvisor.com.br/Tourism-g1024340-Palhoca_State_of_Santa_Catarina-Vacations.html" target="_blank" style="color: #000; font-weight: bold; text-decoration: underline;">Ver todas as avaliações no site oficial</a>
+    </div>
+</section>
+        <p>Aproveite sua estadia em Palhoça - SC</p>
+    </footer>
+
+</body>
+</html>

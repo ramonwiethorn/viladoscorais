@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Onde se Hospedar - Praia da Pinheira</title>
+    <style>
+        :root {
+            --azul-mar: #0077b6;
+            --azul-claro: #90e0ef;
+            --areia: #fdf0d5;
+            --coral: #ffb4a2;
+            --texto: #333;
+            --branco: #ffffff;
+        }
+
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f4f8;
+            color: var(--texto);
+        }
+
+        header {
+            background: linear-gradient(rgba(0, 119, 182, 0.7), rgba(0, 119, 182, 0.7)), 
+                        url('https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&q=80&w=1000') center/cover;
+            color: var(--branco);
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        nav {
+            background: var(--branco);
+            padding: 15px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: var(--azul-mar);
+            font-weight: bold;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .pousada-item {
+            display: flex;
+            background: var(--branco);
+            margin-bottom: 30px;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+            transition: transform 0.3s ease;
+        }
+
+        .pousada-item:hover {
+            transform: scale(1.01);
+        }
+
+        .pousada-img {
+            flex: 1;
+            min-width: 300px;
+            background-size: cover;
+            background-position: center;
+            min-height: 250px;
+        }
+
+        .pousada-info {
+            flex: 2;
+            padding: 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .pousada-info h3 {
+            margin: 0 0 10px 0;
+            color: var(--azul-mar);
+            font-size: 1.5rem;
+        }
+
+        .estrelas {
+            color: #ffb703;
+            margin-bottom: 10px;
+        }
+
+        .comodidades {
+            display: flex;
+            gap: 10px;
+            margin: 15px 0;
+            flex-wrap: wrap;
+        }
+
+        .comodidade-tag {
+            background: #e1f5fe;
+            color: #0277bd;
+            padding: 5px 12px;
+            border-radius: 5px;
+            font-size: 0.85rem;
+            font-weight: 500;
+        }
+
+        .btn-contato {
+            align-self: flex-start;
+            background-color: var(--azul-mar);
+            color: white;
+            padding: 10px 25px;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: bold;
+            margin-top: 10px;
+            transition: background 0.3s;
+        }
+
+        .btn-contato:hover {
+            background-color: #023e8a;
+        }
+
+        footer {
+            background: var(--azul-mar);
+            color: var(--branco);
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        @media (max-width: 768px) {
+            .pousada-item { flex-direction: column; }
+            .pousada-img { min-width: 100%; height: 200px; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Onde se Hospedar</h1>
+        <p>Encontre o descanso perfeito entre o mar e a montanha</p>
+    </header>
+
+    <nav>
+        <a href="cidade.html">História</a>
+        <a href="turismo.html">O que fazer</a>
+        <a href="listaPousadas.html">Pousadas</a>
+        <a href="index.html">Voltar</a>
+
+    </nav>
+
+    <div class="container" id="lista">
+        
+        <div class="pousada-item">
+            <div class="pousada-img" style="background-image: url('https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&q=80&w=600')"></div>
+            <div class="pousada-info">
+                <div class="estrelas">★★★★★</div>
+                <h3>Refúgio do Vale</h3>
+                <p>Localizada próxima ao acesso do Vale da Utopia, esta pousada foca em sustentabilidade e contato direto com a natureza. Ideal para casais.</p>
+                <div class="comodidades">
+                    <span class="comodidade-tag">Café da Manhã Incluso</span>
+                    <span class="comodidade-tag">Vista para o Mar</span>
+                    <span class="comodidade-tag">Wi-Fi</span>
+                </div>
+                <a href="#" class="btn-contato">Ver Disponibilidade</a>
+            </div>
+        </div>
+
+        <div class="pousada-item">
+            <div class="pousada-img" style="background-image: url('https://images.unsplash.com/photo-1499793983690-e29da59ef1c2?auto=format&fit=crop&q=80&w=600')"></div>
+            <div class="pousada-info">
+                <div class="estrelas">★★★★</div>
+                <h3>Recanto das Pedras</h3>
+                <p>Situada na Praia de Cima, oferece apartamentos completos com cozinha, perfeitos para famílias que buscam praticidade e proximidade com as trilhas.</p>
+                <div class="comodidades">
+                    <span class="comodidade-tag">Cozinha Completa</span>
+                    <span class="comodidade-tag">Ar Condicionado</span>
+                    <span class="comodidade-tag">Estacionamento</span>
+                </div>
+                <a href="#" class="btn-contato">Ver Disponibilidade</a>
+            </div>
+        </div>
+
+        <div class="pousada-item">
+            <div class="pousada-img" style="background-image: url('https://images.unsplash.com/photo-1540518614846-7eded433c457?auto=format&fit=crop&q=80&w=600')"></div>
+            <div class="pousada-info">
+                <div class="estrelas">★★★★</div>
+                <h3>Pousada Beira-Mar Pinheira</h3>
+                <p>O nome já diz tudo. Saia do seu quarto e pise diretamente na areia da Praia de Baixo. Excelente custo-benefício para quem quer comodidade.</p>
+                <div class="comodidades">
+                    <span class="comodidade-tag">Pé na areia</span>
+                    <span class="comodidade-tag">Serviço de Praia</span>
+                    <span class="comodidade-tag">Pet Friendly</span>
+                </div>
+                <a href="#" class="btn-contato">Ver Disponibilidade</a>
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>Aproveite sua estadia em Palhoça - SC</p>
+    </footer>
+
+</body>
+</html>

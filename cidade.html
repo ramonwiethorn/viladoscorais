@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palhoça & Praia da Pinheira - História e Beleza</title>
+    <style>
+        :root {
+            --azul-mar: #0077b6;
+            --azul-claro: #90e0ef;
+            --areia: #fdf0d5;
+            --texto: #333;
+            --branco: #ffffff;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            color: var(--texto);
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background: linear-gradient(rgba(0, 119, 182, 0.8), rgba(0, 119, 182, 0.8)), 
+                        url('https://images.unsplash.com/photo-1590523277543-a94d2e4eb00b?auto=format&fit=crop&q=80&w=1000') center/cover;
+            color: var(--branco);
+            padding: 80px 20px;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        header h1 {
+            font-size: 3rem;
+            margin: 0;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        nav {
+            background: var(--branco);
+            padding: 15px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: var(--azul-mar);
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #023e8a;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 20px;
+            background: var(--branco);
+            border-radius: 8px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.05);
+        }
+
+        section {
+            margin-bottom: 40px;
+            padding: 20px;
+        }
+
+        h2 {
+            color: var(--azul-mar);
+            border-bottom: 2px solid var(--azul-claro);
+            padding-bottom: 10px;
+        }
+
+        .highlight-box {
+            background-color: var(--areia);
+            padding: 20px;
+            border-left: 5px solid var(--azul-mar);
+            font-style: italic;
+            margin: 20px 0;
+        }
+
+        .flex-content {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        footer {
+            background: var(--azul-mar);
+            color: var(--branco);
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px;
+        }
+
+        /* Responsividade simples */
+        @media (max-width: 600px) {
+            header h1 { font-size: 2rem; }
+            .container { margin: 10px; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Palhoça, SC</h1>
+        <p>Onde a natureza e a história se encontram</p>
+    </header>
+
+    <nav>
+        <a href="#palhoca">Palhoça</a>
+        <a href="#pinheira">Praia da Pinheira</a>
+        <a href="#cultura">Cultura</a>
+        <a href="index.html">Voltar</a>
+    </nav>
+
+    <div class="container">
+        
+        <section id="palhoca">
+            <h2>História de Palhoça</h2>
+            <p>
+                Fundada em 1793, <strong>Palhoça</strong> tem sua origem ligada à necessidade de proteger a capital catarinense de invasões. Seu nome curioso deriva das "palhoças" (cabanas com teto de palha) construídas pelos primeiros habitantes para armazenar farinha e abrigar as guardas que vigiavam o caminho para o sul.
+            </p>
+            <p>
+                A cidade cresceu entre o mar e as montanhas, tornando-se um dos municípios que mais se desenvolve em Santa Catarina, sem nunca perder sua essência de vila de pescadores em seus recantos mais preservados.
+            </p>
+        </section>
+
+        <section id="pinheira">
+            <h2>A Magia da Praia da Pinheira</h2>
+            <div class="flex-content">
+                <div>
+                    <p>
+                        A <strong>Praia da Pinheira</strong> é um dos tesouros mais bem guardados de Palhoça. Diferente dos grandes centros urbanos, ela mantém um ar rústico e acolhedor. Historicamente, a região era uma vila de pescadores isolada, acessada por trilhas e estradas de terra batida.
+                    </p>
+                    <p>
+                        Dividida entre a "Praia de Baixo" e a "Praia de Cima", a Pinheira é famosa por suas águas calmas e límpidas, sendo protegida por morros que oferecem algumas das trilhas mais bonitas do estado, como o acesso ao Vale da Utopia.
+                    </p>
+                </div>
+            </div>
+            <div class="highlight-box">
+                "A Pinheira não é apenas um destino, é um estado de espírito onde o tempo parece passar mais devagar."
+            </div>
+        </section>
+
+        <section id="cultura">
+            <h2>Cultura e Tradição</h2>
+            <p>
+                A cultura local é fortemente influenciada pela herança <strong>Açoriana</strong>. Isso se reflete na gastronomia, com o destaque para os frutos do mar, o cultivo de ostras e mariscos, e as tradicionais festas religiosas. 
+            </p>
+            <ul>
+                <li><strong>Artesanato:</strong> Redes de pesca e rendas de bilro.</li>
+                <li><strong>Natureza:</strong> Abriga parte do Parque Estadual da Serra do Tabuleiro.</li>
+                <li><strong>Turismo:</strong> Destino favorito para quem busca trilhas, surf e sossego.</li>
+            </ul>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Descubra Palhoça - Um paraíso em Santa Catarina</p>
+    </footer>
+
+</body>
+</html>
