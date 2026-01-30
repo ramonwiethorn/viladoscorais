@@ -126,6 +126,8 @@ footer {
     color: white;
     padding: 40px 0 0;
     margin-top: 50px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
 }
 
 footer .container {
@@ -135,16 +137,21 @@ footer .container {
     gap: 20px;
 }
 
+
 .footer-info p { margin-bottom: 10px; }
 .socials a { color: white; font-size: 1.5rem; margin-left: 15px; }
 
 .bottom-footer {
+    color: #FFF;
     background: #ffffff;
     border-radius: 2px;
     text-align: center;
     padding: 15px;
     margin-top: 30px;
     font-size: 0.9rem;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
 }
 
 /* Responsividade */
@@ -175,9 +182,11 @@ footer .container {
     text-decoration: none;
     transition: all 0.3s ease;
 }
-
+footer{
+    text-align: center;
+}
 .whatsapp-float:hover {
-    background-color: #128c7e;
+    background-color: #000000;
     transform: scale(1.1);
     color: #fff;
 }
@@ -400,7 +409,7 @@ body {
 footer {
     text-align: center;
     padding: 30px;
-    background: var(--deep-blue);
+    background: black;
     color: white;
     margin-top: 50px;
 }
